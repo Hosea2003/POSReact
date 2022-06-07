@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+:root{
+  --blue:#3696ce;
+  --active:#339cfe;
 }
 
 .App-logo {
@@ -36,3 +42,17 @@
     transform: rotate(360deg);
   }
 }
+
+.AppGlass{
+  display: grid;
+  grid-template-columns: 15rem auto;
+  gap: 2rem;
+}
+
+@media screen and (max-width:1200px){
+    .AppGlass{
+      grid-template-columns: 4rem auto;
+    }
+}
+
+

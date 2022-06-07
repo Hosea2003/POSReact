@@ -1,0 +1,17 @@
+.Dashboard{
+    display: grid;
+    grid-template-columns: auto 30rem;
+    gap: 2rem;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap:2rem;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 20px;
+}
