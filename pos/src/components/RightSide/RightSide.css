@@ -6,3 +6,10 @@
     gap:2rem;
     padding-top:2.3rem;
 }
+
+@media screen and (max-width:700px){
+    .RightSide{
+        align-items: center;
+        justify-content: center;
+    }
+}

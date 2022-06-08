@@ -6,8 +6,7 @@ import RightSide from '../../components/RightSide/RightSide'
 
 function Dashboard(){
     return (
-        <div className="Dashboard"
-        style={{marginTop:"3rem"}}>
+        <div className="Dashboard">
             <div className="main-content">
                 <h1>Dashboard</h1>
                 <Cards/>

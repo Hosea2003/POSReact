@@ -49,6 +49,10 @@
   gap: 2rem;
 }
 
+.Routes{
+  margin-top: 2rem;
+}
+
 @media screen and (max-width:1200px){
     .AppGlass{
       grid-template-columns: 4rem auto;
