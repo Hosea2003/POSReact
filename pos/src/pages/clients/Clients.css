@@ -3,3 +3,37 @@ h1{
     font-size:20px;
 }
 
+.header{
+    display: flex;
+    flex-direction: column;
+}
+
+.Clients{
+    display: flex;
+    flex-direction: column;
+    gap:3.5rem;
+    padding-bottom: 5rem;
+}
+
+.Table{
+    width: 70%;
+    margin-inline: auto;
+}
+
+.add-btn{
+    position:fixed;
+    bottom: 4rem;
+    right: 8rem;
+    background: #00b5ff;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.add-btn svg{
+    color: white;
+    font-size: 1.8rem;
+}
+
+.add-btn:hover{
+    background: #0399d4;
+}

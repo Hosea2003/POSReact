@@ -59,4 +59,10 @@
     }
 }
 
+@media screen and (max-width:400px){
+   .AppGlass{
+     grid-template-columns: 2rem auto;
+   }
+}
+
 
