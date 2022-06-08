@@ -3,6 +3,9 @@ import { useParams } from 'react-router-dom'
 import img1 from '../../imgs/img1.png'
 import "./ClientDetail.css"
 import {FaBell} from 'react-icons/fa'
+import ClientVersement from '../../components/ClientVersement/ClientVersement'
+import ClientAchat from '../../components/ClientAchat/ClientAchat'
+import ClientCommande from '../../components/ClientCommande/ClientCommande'
 
 const ClientDetail = () => {
     const {id}=useParams()
@@ -56,7 +59,13 @@ const ClientDetail = () => {
                     </div>
 
                 </div>
-                
+
+            </div>
+
+            <ClientAchat/>
+            <div className="trafic">
+                <ClientVersement/>
+                <ClientCommande/>
             </div>
         </div>
     )

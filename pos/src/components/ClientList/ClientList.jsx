@@ -8,7 +8,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import './ClientList.css'
 import Data from './Data'
-
+import {NavLink} from 'react-router-dom'
 
 function createData(img, name, date, status, price) {
   return { name, date, status, price };
@@ -56,7 +56,7 @@ export default function ClientList() {
                     {Data.map((client, index) => (
                         <TableRow
                         key={index}
-                        sx={{borderTop: 2, borderColor:'#f3f3f3' }}
+                        sx={{borderTop: 4, borderColor:'#3d464d79' }}
                         >
                         <TableCell component="th" scope="row">
                             <div className='profil'>
@@ -69,7 +69,11 @@ export default function ClientList() {
                             <span className="status">{client.date}</span>
                         </TableCell>
                         <TableCell align="left">{client.solde}</TableCell>
-                        <TableCell align="left" className="see-profil"><span>Voir Profil</span></TableCell>
+                        <TableCell align="left">
+                            <NavLink to={"/admin/client/"+index}>
+                                <span className="see-profil">Voir Profil</span>
+                            </NavLink>
+                        </TableCell>
                         </TableRow>
                     ))}
                 </TableBody>

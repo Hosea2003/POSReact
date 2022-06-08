@@ -88,7 +88,7 @@ h3{
     margin-top:2.9rem;
     display: flex;
     flex-direction: row;
-    gap:3rem;
+    gap:4rem;
     align-items: center;
 }
 
@@ -101,6 +101,12 @@ h3{
 .attributes, .value h4{
     font-size:14px;
     font-weight: 500;
+}
+
+@media screen and (max-width:1200px){
+    .DetailContainer .Table{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:650px){

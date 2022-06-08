@@ -19,7 +19,7 @@
     border-radius:9px;
 }
 
-.see-profil>span{
+.see-profil{
     color:#008cff !important;
     cursor: pointer;
     background: #cdeefc;
@@ -29,7 +29,7 @@
     border-radius: 5px;
 }
 
-.see-profil>span:hover{
+.see-profil:hover{
     text-decoration: underline;
 }
 

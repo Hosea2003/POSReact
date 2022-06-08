@@ -5,22 +5,17 @@ import Sidebar from './components/sidebar/Sidebar'
 import Dashboard from './pages/dashboard/Dashboard'
 import Clients from './pages/clients/Clients';
 import ClientDetail from './pages/ClientDetail/ClientDetail';
+import Login from './pages/Login/Login';
+import Admin from './pages/Admin/Admin';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <div className='AppGlass'>
-          <Sidebar/>
-          <div className='Routes'>
-            <Routes>
-              <Route path='/' element={<Dashboard/>}/>
-              <Route path='/clients' element={<Clients/>}/>
-              <Route path='/client/:id' element={<ClientDetail/>}/>
-            </Routes>
-          </div>
-          
-        </div>
+        <Routes>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/admin/*' element={<Admin/>}/>
+        </Routes>
       </BrowserRouter>
     </div>
   );
