@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import img1 from '../../imgs/img1.png'
 import "./ClientDetail.css"
 import {FaBell} from 'react-icons/fa'
@@ -18,6 +18,11 @@ const ClientDetail = () => {
         phone:"034 08 722 65",
         email:"mahefaniainarindra@gmail.com",
         gender:"Male"
+    }
+
+    const navigate = useNavigate()
+    const changeRoot=()=>{
+        navigate("/admin/client/update/"+id)
     }
     return (
         <div className='DetailContainer'>
@@ -44,7 +49,12 @@ const ClientDetail = () => {
                 <div className="right">
                     <h1>{data.name}</h1>
                     <span>{data.job}</span>
-                    <button className="order"><FaBell/>Commander</button>
+                    <div className="client-action-btn">
+                        <button className="order"><FaBell/>Commander</button>
+                        <button className='detail-btn' onClick={changeRoot}>Modifier les informations</button>
+                    </div>
+                   
+
                     <div className="more-info">
                         <div className="attributes">
                             <h4>Phone</h4>
@@ -56,6 +66,7 @@ const ClientDetail = () => {
                             <span>{data.email}</span>
                             <h4>{data.gender}</h4>
                         </div>
+
                     </div>
 
                 </div>

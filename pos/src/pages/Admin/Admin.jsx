@@ -4,6 +4,7 @@ import Dashboard from '../dashboard/Dashboard'
 import Sidebar from '../../components/sidebar/Sidebar'
 import Clients from '../clients/Clients'
 import ClientDetail from '../ClientDetail/ClientDetail'
+import ClientUpdate from '../../components/ClientUpdate/ClientUpdate'
 
 const Admin = () => {
     const path = useLocation()
@@ -15,6 +16,7 @@ const Admin = () => {
                 <Route path='/' element={<Dashboard/>}/>
                 <Route path='/clients' element={<Clients/>}/>
                 <Route path='/client/:id' element={<ClientDetail/>}/>
+                <Route path='/client/update/:id' element={<ClientUpdate/>}/>
             </Routes>
         </div>
     </div>

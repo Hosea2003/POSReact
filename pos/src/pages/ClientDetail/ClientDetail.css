@@ -61,6 +61,16 @@ h3{
     gap: 1.2rem;
 }
 
+.client-action-btn{
+    display: flex;
+    align-items: center;
+    gap:1.3rem;
+}
+
+.client-action-btn .detail-btn{
+    margin-top: 4.6rem;
+}
+
 .right{
     width:100%;
     margin-left:3rem;

@@ -1,0 +1,85 @@
+.ClientUpdate{
+    display: flex;
+    width: 100vh;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border: 1px solid rgba(161, 176, 185, 0.411);
+    padding:2rem;
+    background: rgba(178, 206, 218, 0.226);
+}
+
+.ClientUpdate .left-side-update{
+    border-right: 1px solid rgb(161, 176, 185);
+    padding-right: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width:20vh;
+}
+
+.img-update{
+    font-size:13px;
+    color: rgb(5, 183, 253);
+}
+
+.save-update-btn{
+    font-size:13px;
+    display: flex;
+    align-items: center;
+    gap:.7rem;
+    color:white;
+    background: #85959e;
+    padding:.3rem .5rem;
+    border-radius: 8px;
+    margin-inline: auto;
+}
+
+.info-update{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.info-update input[type=text], 
+.info-update input[type=email]{
+    border-radius: 7px;
+    padding:.5rem 15px;
+    outline: none;
+
+}
+
+.info-update input[type=text]:focus, 
+.info-update input[type=email]:focus{
+    border:1px solid rgb(28, 165, 245);
+}
+
+.sex-info{
+    display: flex;
+    align-items: center;
+    font-size:15px;
+    color: #5f7783;
+}
+
+.sex-info .sex{
+    display: flex;
+    align-items: center;
+    gap:.2rem;
+}
+
+.sex-info .sex input{
+    margin-left: 1rem;
+}
+
+
+
+@media screen and (max-width:1200px) {
+    .ClientUpdate{
+        width: 70vh;
+    }
+}
+
