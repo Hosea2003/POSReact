@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   font-family: 'Inter', sans-serif;
+  /* transition: all 300ms ease-in-out; */
 }
 
 :root{

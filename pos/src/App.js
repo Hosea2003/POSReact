@@ -4,6 +4,7 @@ import {FiSettings} from 'react-icons/fi';
 import Sidebar from './components/sidebar/Sidebar'
 import Dashboard from './pages/dashboard/Dashboard'
 import Clients from './pages/clients/Clients';
+import ClientDetail from './pages/ClientDetail/ClientDetail';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Routes>
               <Route path='/' element={<Dashboard/>}/>
               <Route path='/clients' element={<Clients/>}/>
+              <Route path='/client/:id' element={<ClientDetail/>}/>
             </Routes>
           </div>
           

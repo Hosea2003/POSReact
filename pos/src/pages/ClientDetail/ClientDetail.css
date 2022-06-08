@@ -1,0 +1,122 @@
+h3{
+    color:black;
+    font-weight: 800;
+    font-size:13px;
+}
+
+.DetailContainer{
+    width: 70%;
+    margin-inline: auto;
+}
+
+.ClientDetail{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    border-radius: 2rem;
+    box-shadow: 2px 3px 3px 0px rgb(177, 200, 221);
+    border: 1px solid rgb(177, 200, 221);
+    padding:2rem;
+}
+
+.ClientDetail .left{
+    width:260px;
+    border-right: 1px solid rgb(177, 200, 221);
+    padding:10px;
+}
+
+.ClientDetail .img{
+    width:210px;
+    height:210px;
+}
+
+.img>img{
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 2rem;
+}
+
+.short{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detail-btn{
+    font-size:11px;
+    padding:.5rem .7rem;
+    background: #bde0fd;
+    font-weight: bold;
+    border-radius: 8px;
+    color:#07a4ff;
+}
+
+.detail-btn:hover{
+    text-decoration: underline;
+}
+
+.about-transaction{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.right{
+    width:100%;
+    margin-left:3rem;
+    text-align: left;
+}
+
+.order{
+    font-size:13px;
+    display: flex;
+    align-items: center;
+    gap:.7rem;
+    color:#1b2327;
+    background: #c9d1d64b;
+    padding:.3rem .5rem;
+    border-radius: 8px;
+    margin-top: 5rem;
+}
+
+.ClientDetail span{
+    font-size:13px;
+    color:#07a4ff;
+}
+
+.more-info{
+    margin-top:2.9rem;
+    display: flex;
+    flex-direction: row;
+    gap:3rem;
+    align-items: center;
+}
+
+.value, .attributes{
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+}
+
+.attributes, .value h4{
+    font-size:14px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:650px){
+    .ClientDetail{
+        flex-direction: column;
+        gap:2rem;
+    }
+
+    .right{
+        margin-left: 0;
+    }
+
+    .ClientDetail .left{
+        border-bottom: 1px solid rgb(177, 200, 221);
+        border-right: none;
+    }
+}
+
+
