@@ -1,0 +1,98 @@
+.Login{
+    height:60vh;
+    width: 70vh;
+    display: flex;
+    box-shadow: 2px 2px 10px 0px rgba(57, 63, 77, 0.493);
+    top:50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.login-img{
+    background: rgba(23, 151, 255, 0.897);
+    width: 60%;
+}
+
+.login-insert{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:2rem 0;
+}
+
+.login-insert p{
+    color: rgb(185, 198, 216);
+    font-size: 14px;
+}
+
+.auth-input{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 1.8rem;
+}
+
+.auth-input input{
+    font-size:14px;
+    width: 100%;
+    border: 2px solid rgba(97, 169, 252, 0.548);
+    padding:.35rem 15px;
+    border-radius: 15px;
+    outline: none;
+}
+
+.auth-input input:focus{
+    border: 2px solid rgb(64, 157, 250);
+}
+
+.auth-input input::-webkit-input-placeholder {
+    text-align: center;
+    font-size:14px;
+ }
+
+ .action-btn{
+     font-size:14px;
+ }
+
+ .action-btn .sign-in-btn{
+     background: rgb(63, 73, 94);
+     padding:.4rem 2.5rem;
+     border-radius: 15px;
+     color: rgba(189, 199, 219, 0.712);
+ }
+
+ .action-btn .forgot-pass{
+     font-size:12px;
+     text-decoration: underline;
+     color: rgb(32, 39, 54);
+ }
+
+ .to-register{
+     font-size:13px;
+ }
+
+ .to-register span{
+     color: #A6D3F2;
+ }
+
+ .to-register .register-link{
+     color: #2fa8f8;
+ }
+
+ @media screen and (max-width:700px){
+     .Login{
+        height:50vh;
+        width: 60vh;
+     }
+ }
+
+ @media screen and (max-width:600px){
+     .Login{
+        height: 40vh;
+        width: 40vh;
+     }
+ }
+

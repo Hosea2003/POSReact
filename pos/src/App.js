@@ -7,6 +7,7 @@ import Clients from './pages/clients/Clients';
 import ClientDetail from './pages/ClientDetail/ClientDetail';
 import Login from './pages/Login/Login';
 import Admin from './pages/Admin/Admin';
+import Register from './pages/Register/Register';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/login' element={<Login/>}/>
+          <Route path='/register' element={<Register/>}/>
           <Route path='/admin/*' element={<Admin/>}/>
         </Routes>
       </BrowserRouter>
