@@ -1,0 +1,67 @@
+.Register{
+    height: 70vh;
+}
+
+.register-header a{
+    position: absolute;
+    right: 2rem;
+    top:1rem;
+    font-size:13px;
+    color: white;
+}
+
+.register-header {
+    display:inline-block;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  }
+  
+.register-header img{
+    position:relative;
+    z-index:-1;
+    display:block;
+}
+
+.register-form, .register-user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.2rem;
+}
+
+.register-user input::placeholder{
+    text-align: center;
+}
+
+.register-user input{
+    padding:.5rem 15px;
+    border-radius: 15px;
+    outline: none;
+    font-size:14px;
+    color:rgb(51, 61, 75);
+}
+
+.register-user input:focus{
+    border: 2px solid rgba(95, 98, 100, 0.986);
+}
+
+.register-form{
+    width:300px;
+    padding:3rem 0;
+    border-radius: 15px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(123, 157, 209, 0.623);
+}
+
+.register-btn{
+    color:white;
+    font-weight: bold;
+}
