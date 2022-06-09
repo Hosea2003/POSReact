@@ -10,9 +10,9 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import AjoutCategorie from '../../components/AjoutCategorie/AjoutCategorie'
 import CustomPopup from '../../components/popup/CustomPopup'
 import Vendre from '../../components/Vendre/Vendre'
+import {useNavigate} from 'react-router-dom'
 
 function createData(product, Id, number, price) {
     return { product, Id, number, price };
@@ -37,6 +37,12 @@ const Products = () => {
     const popupCloseHandlerOrder = (e) => {
         setVisibilityOrder(e)
     };
+
+    const navigate= useNavigate()
+    const changeRoot=(id)=>{
+        console.log(id)
+        navigate("product/"+id)
+    }
 
   return (
     <div className='Products'>
@@ -81,6 +87,7 @@ const Products = () => {
                                 <div className="buyOrorder">
                                     <button onClick={popupCloseHandlerVente} >Vendre</button>
                                     <button onClick={popupCloseHandlerOrder}>Commander</button>
+                                    <button onClick={()=>{navigate("/product/"+index)}}>Modifier</button>
                                 </div>
                             </TableCell>
                             </TableRow>
@@ -106,8 +113,6 @@ const Products = () => {
         >
             <Vendre vendre={false}/>
       </CustomPopup>
-
-        <AjoutCategorie/>
     </div>
   )
 }

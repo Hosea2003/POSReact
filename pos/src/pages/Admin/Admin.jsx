@@ -7,6 +7,7 @@ import ClientDetail from '../ClientDetail/ClientDetail'
 import ClientUpdate from '../../components/ClientUpdate/ClientUpdate'
 import Products from '../Products/Products'
 import Stock from '../Stock/Stock'
+import AjoutProduct from '../AjoutProduct/AjoutProduct'
 
 const Admin = () => {
     const path = useLocation()
@@ -21,6 +22,8 @@ const Admin = () => {
                 <Route path='/client/update/:id' element={<ClientUpdate/>}/>
                 <Route path='/products' element={<Products/>}/>
                 <Route path='/stock' element={<Stock/>}/>
+                <Route path='/add/product' element={<AjoutProduct/>}/>
+                <Route path='/product/:id' element={<AjoutProduct modifier={true}/>}/>
             </Routes>
         </div>
     </div>

@@ -82,6 +82,10 @@
     background: #3efca3;
 }
 
+.buyOrorder button:nth-child(3){
+    background: rgb(6, 223, 252);
+}
+
 @media screen and (max-width:1000px){
     .Products{
         width:100%;
