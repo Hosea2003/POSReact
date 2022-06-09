@@ -6,22 +6,27 @@ import{
 export const data=[
     {
         icon:UilEstate,
-        heading:"Dashboard"
+        heading:"Dashboard",
+        link:'/'
     },
     {
         icon:UilClipboard,
-        heading:"Commande"
+        heading:"Commande",
+        link:'/'
     },
     {
         icon:UilUsersAlt,
-        heading:"Clients"
+        heading:"Clients",
+        link:'/clients'
     },
     {
         icon:UilPackage,
-        heading:"Produits"
+        heading:"Produits",
+        link:'/products'
     },
     {
         icon:UilChart,
-        heading:"Analyse"
+        heading:"Stock",
+        link:'/stock'
     },
 ]
