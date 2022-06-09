@@ -1,14 +1,16 @@
 .Products{
     width: 70%;
     margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 2rem;
 }
 
 .productsHeader{
     margin-top: 2.5rem;
     display: flex;
-    padding-right: 2rem;
     align-items: center;
     gap:2rem;
+    justify-content: center;
 }
 
 .searchProduct{
@@ -38,6 +40,10 @@
 
 .productList{
     width: 70%;
+    justify-content: center;
+    margin-inline: auto;
+    transform: translate(-65px);
+    margin-bottom: 2rem;
 }
 
 .MuiTableRow-root>*{
@@ -63,7 +69,7 @@
 }
 
 .buyOrorder button{
-    padding:.15rem .4rem;
+    padding:.4rem 1rem;
     color:white;
     border-radius: 15px;
 }
@@ -74,4 +80,10 @@
 
 .buyOrorder button:nth-child(2){
     background: #3efca3;
+}
+
+@media screen and (max-width:1000px){
+    .Products{
+        width:100%;
+    }
 }

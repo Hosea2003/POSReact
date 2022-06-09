@@ -6,6 +6,7 @@ import Clients from '../clients/Clients'
 import ClientDetail from '../ClientDetail/ClientDetail'
 import ClientUpdate from '../../components/ClientUpdate/ClientUpdate'
 import Products from '../Products/Products'
+import Stock from '../Stock/Stock'
 
 const Admin = () => {
     const path = useLocation()
@@ -19,6 +20,7 @@ const Admin = () => {
                 <Route path='/client/:id' element={<ClientDetail/>}/>
                 <Route path='/client/update/:id' element={<ClientUpdate/>}/>
                 <Route path='/products' element={<Products/>}/>
+                <Route path='/stock' element={<Stock/>}/>
             </Routes>
         </div>
     </div>

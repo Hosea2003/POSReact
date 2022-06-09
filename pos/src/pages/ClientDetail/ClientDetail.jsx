@@ -22,7 +22,7 @@ const ClientDetail = () => {
 
     const navigate = useNavigate()
     const changeRoot=()=>{
-        navigate("/admin/client/update/"+id)
+        navigate("/client/update/"+id)
     }
     return (
         <div className='DetailContainer'>

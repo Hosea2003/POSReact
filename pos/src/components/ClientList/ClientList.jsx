@@ -70,7 +70,7 @@ export default function ClientList() {
                         </TableCell>
                         <TableCell align="left">{client.solde}</TableCell>
                         <TableCell align="left">
-                            <NavLink to={"/admin/client/"+index}>
+                            <NavLink to={"/client/"+index}>
                                 <span className="see-profil">Voir Profil</span>
                             </NavLink>
                         </TableCell>

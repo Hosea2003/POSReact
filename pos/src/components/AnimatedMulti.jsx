@@ -16,7 +16,6 @@ const colourOptions=[
 const animatedComponents = makeAnimated();
 
 export default function AnimatedMulti() {
-    console.log("ato")
   return (
     <Select
       closeMenuOnSelect={false}

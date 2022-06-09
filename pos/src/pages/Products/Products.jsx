@@ -1,5 +1,5 @@
 import './Products.css'
-import React from 'react'
+import React, {useState} from 'react'
 import AnimatedMulti from '../../components/AnimatedMulti.jsx'
 import { HiPlus } from 'react-icons/hi'
 import {MdEdit} from 'react-icons/md'
@@ -10,6 +10,9 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import AjoutCategorie from '../../components/AjoutCategorie/AjoutCategorie'
+import CustomPopup from '../../components/popup/CustomPopup'
+import Vendre from '../../components/Vendre/Vendre'
 
 function createData(product, Id, number, price) {
     return { product, Id, number, price };
@@ -24,6 +27,17 @@ function createData(product, Id, number, price) {
 ];
 
 const Products = () => {
+    const [visibilityVente, setVisibilityVente] = useState(false);
+    const [visibilityOrder, setVisibilityOrder] = useState(false);
+
+    const popupCloseHandlerVente = (e) => {
+        setVisibilityVente(e)
+      };
+
+    const popupCloseHandlerOrder = (e) => {
+        setVisibilityOrder(e)
+    };
+
   return (
     <div className='Products'>
         <h1>Produits</h1>
@@ -65,8 +79,8 @@ const Products = () => {
                             <TableCell align="left">{row.number}</TableCell>
                             <TableCell align="center">
                                 <div className="buyOrorder">
-                                    <button>Acheter</button>
-                                    <button>Commander</button>
+                                    <button onClick={popupCloseHandlerVente} >Vendre</button>
+                                    <button onClick={popupCloseHandlerOrder}>Commander</button>
                                 </div>
                             </TableCell>
                             </TableRow>
@@ -76,6 +90,24 @@ const Products = () => {
                 </TableContainer>
             </div>
         </div>
+
+        <CustomPopup
+            onClose={popupCloseHandlerVente}
+            show={visibilityVente}
+            title="Vendre"
+        >
+            <Vendre vendre={true}/>
+      </CustomPopup>
+
+      <CustomPopup
+            onClose={popupCloseHandlerOrder}
+            show={visibilityOrder}
+            title="Vendre"
+        >
+            <Vendre vendre={false}/>
+      </CustomPopup>
+
+        <AjoutCategorie/>
     </div>
   )
 }

@@ -1,0 +1,22 @@
+#prixFournisseur{
+    border:2px solid rgba(174, 185, 194, 0.788);
+    outline: none;
+    border-radius: 8px;
+    padding:.1rem 8px;
+    font-size:13px;
+    width: 100px;
+    text-align: center;
+
+}
+
+.addStock-btn{
+    padding:.4rem 1rem;
+    font-size: 14px;
+    background-color: rgb(51, 69, 80);
+    color: whitesmoke;
+    border-radius: 18px;
+}
+
+.dateExpire{
+    text-align: center;
+}

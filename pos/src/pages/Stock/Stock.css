@@ -1,0 +1,32 @@
+.Stock{
+    width:85%;
+    margin:0 auto;
+    margin-bottom: 2rem;
+}
+
+.searchStock{
+    margin-block: 2rem;
+}
+
+.MuiTableRow-root>*{
+    padding:10px;
+}
+
+.MuiTableRow-root.MuiTableRow-head>*{
+    font-weight:bold !important
+}
+
+.stockTable td, th{
+    border:none !important;
+}
+
+.stockTable:first-child{
+    border-radius: 2rem !important;
+}
+
+@media screen and (max-width:1350px){
+    .Stock{
+        width:100%;
+        padding-right: 2rem;
+    }
+}

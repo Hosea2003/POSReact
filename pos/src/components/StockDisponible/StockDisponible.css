@@ -1,0 +1,22 @@
+.StockDisponible{
+    width:50%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.searchStockDispo{
+    margin-block: 1.3rem;
+}
+
+.MuiTableRow-root.MuiTableRow-head>*{
+    font-weight:bold !important
+}
+
+.stockdispoTable td, th{
+    border:none !important;
+}
+
+.stockdispoTable:first-child{
+    border-radius: 2rem !important;
+}
+

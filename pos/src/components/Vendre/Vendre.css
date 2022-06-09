@@ -1,0 +1,33 @@
+.VendreProduct{
+    width: 300px;
+    height: 250px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+}
+
+.VendreProduct>div{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.vendre-value{
+    gap:.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.VendreProduct span{
+    font-size: 15px;
+    color:rgb(36, 167, 255);
+}
+
+.vendreBtn{
+    padding:.5rem .8rem;
+    color:white;
+    background: rgb(25, 218, 112);
+    margin-top: .3rem;
+    border-radius: 8px;
+}
