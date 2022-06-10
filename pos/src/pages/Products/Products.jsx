@@ -26,7 +26,7 @@ function createData(product, Id, number, price) {
       createData('Apolo', 123456789, 105,'1200 Ar')
 ];
 
-const Products = () => {
+const Products = (params) => {
     const [visibilityVente, setVisibilityVente] = useState(false);
     const [visibilityOrder, setVisibilityOrder] = useState(false);
 
@@ -44,6 +44,43 @@ const Products = () => {
         navigate("product/"+id)
     }
 
+    const actionButtons = ()=>{
+        if(!params.client){
+            return (
+                <div className="action-icons">
+                    <HiPlus/>
+                    <MdEdit/>
+                </div>
+            )
+        }
+        return <div></div>
+    }
+
+    const buyOrOrderButtons = (index)=>{
+        if(!params.client){
+            return(
+                <div className="buyOrorder">
+                    <button onClick={popupCloseHandlerVente} >Vendre</button>
+                    <button onClick={popupCloseHandlerOrder}>Commander</button>
+                    <button onClick={()=>{navigate("/product/"+index)}}>Modifier</button>
+                </div>
+            )
+        }
+        return(
+            <div className="buyOrorder">
+                <button onClick={popupCloseHandlerOrder}>Commander</button>
+            </div>
+        )
+    }
+
+    const makeStyle = ()=>{
+        if(params.client){
+            return{
+                marginLeft:'4rem'
+            }
+        }
+    }
+
   return (
     <div className='Products'>
         <h1>Produits</h1>
@@ -51,14 +88,12 @@ const Products = () => {
             <div className="searchProduct">
                 <AnimatedMulti/>
             </div>
-            <div className="action-icons">
-                <HiPlus/>
-                <MdEdit/>
-            </div>
+            {actionButtons()}
+            
         </div>
 
         <div className="productList">
-            <div className="ProductTable">
+            <div className="ProductTable" style={makeStyle()}>
                 <TableContainer component={Paper}
                 style={{boxShadow:'0px 3px 10px 5px #80808029'}}>
                     <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -84,11 +119,7 @@ const Products = () => {
                             <TableCell align="left">{row.price}</TableCell>
                             <TableCell align="left">{row.number}</TableCell>
                             <TableCell align="center">
-                                <div className="buyOrorder">
-                                    <button onClick={popupCloseHandlerVente} >Vendre</button>
-                                    <button onClick={popupCloseHandlerOrder}>Commander</button>
-                                    <button onClick={()=>{navigate("/product/"+index)}}>Modifier</button>
-                                </div>
+                                {buyOrOrderButtons(index)}
                             </TableCell>
                             </TableRow>
                         ))}

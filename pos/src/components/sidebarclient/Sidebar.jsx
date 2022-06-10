@@ -34,7 +34,7 @@ function Sidebar() {
                         )
                     })}
                     
-                    <div className="menuItem" onClick={()=>navigate('/login')}>
+                    <div className="menuItem">
                         <div><UilSignOutAlt/></div>
                     </div>
 

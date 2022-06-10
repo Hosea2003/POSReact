@@ -8,6 +8,7 @@ import ClientDetail from './pages/ClientDetail/ClientDetail';
 import Login from './pages/Login/Login';
 import Admin from './pages/Admin/Admin';
 import Register from './pages/Register/Register';
+import Client from './pages/Client/Client';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Routes>
           <Route path='/login' element={<Login/>}/>
           <Route path='/register' element={<Register/>}/>
-          <Route path='/*' element={<Admin/>}/>
+          <Route path='/admin/*' element={<Admin/>}/>
+          <Route path='/client/*' element={<Client/>}/>
         </Routes>
       </BrowserRouter>
     </div>

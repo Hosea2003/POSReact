@@ -7,26 +7,26 @@ export const data=[
     {
         icon:UilEstate,
         heading:"Dashboard",
-        link:'/'
+        link:''
     },
     {
         icon:UilClipboard,
         heading:"Commande",
-        link:'/'
+        link:''
     },
     {
         icon:UilUsersAlt,
         heading:"Clients",
-        link:'/clients'
+        link:'clients'
     },
     {
         icon:UilPackage,
         heading:"Produits",
-        link:'/products'
+        link:'products'
     },
     {
         icon:UilChart,
         heading:"Stock",
-        link:'/stock'
+        link:'stock'
     },
 ]

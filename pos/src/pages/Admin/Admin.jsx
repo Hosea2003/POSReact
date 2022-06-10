@@ -20,7 +20,7 @@ const Admin = () => {
                 <Route path='/clients' element={<Clients/>}/>
                 <Route path='/client/:id' element={<ClientDetail/>}/>
                 <Route path='/client/update/:id' element={<ClientUpdate/>}/>
-                <Route path='/products' element={<Products/>}/>
+                <Route path='/products' element={<Products client={false}/>}/>
                 <Route path='/stock' element={<Stock/>}/>
                 <Route path='/add/product' element={<AjoutProduct/>}/>
                 <Route path='/product/:id' element={<AjoutProduct modifier={true}/>}/>
